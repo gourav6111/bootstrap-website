@@ -178,6 +178,7 @@
             type="email"
             class="form-control"
             id="exampleInputEmail1"
+            value=""
             aria-describedby="emailHelp"
           />
           <small id="emailHelp" class="form-text text-muted"
@@ -190,6 +191,7 @@
             type="text"
             class="form-control"
             id="validationCustom01"
+            value=""
             required
           />
         </div>
@@ -199,11 +201,20 @@
             type="text"
             class="form-control"
             id="validationCustom02"
+            value=""
             required
           />
         </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <script>
+          function myAlert(){
+            //let mail=document.getElementById("exampleInputEmail1").value;
+           // let fName=document.getElementById("validationCustom01").value;
+           // let lName=document.getElementById("validationCustom02").value;
+            //alert("Your details are:- "+email+" "+fName+" "+lName);
+            alert("Your details are:- "+document.getElementById("exampleInputEmail1").value+" "+document.getElementById("validationCustom01").value+" "+document.getElementById("validationCustom02").value);
+          }
+        </script>
+        <button onclick="myAlert()" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </body>
